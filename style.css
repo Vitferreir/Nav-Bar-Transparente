@@ -1,0 +1,82 @@
+/*NAV BAR*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 500vh;
+    background-color: rgb(255, 255, 241)
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav {
+    position: relative;
+}
+
+header img {
+    width: 150px;
+    margin-top: 15px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+}
+
+header ul li a:hover::after {
+    width: 100%;
+}
+
+header ul li a::after {
+    content: " ";
+    width: 0;
+    height: 4px;
+    background-color: #ffba3a;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+header {
+    width: 100%;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem {
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+header.rolagem a, header.rolagem i {
+    color: #ff7b00;
+}
